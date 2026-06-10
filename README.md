@@ -1,6 +1,6 @@
-# Rustainer
+# Dockyard
 
-Rustainer is an open-source container controller and lightweight orchestration tool written in Rust.
+Dockyard is an open-source container controller and lightweight orchestration tool written in Rust.
 
 It is designed as a learning-focused project in systems programming, containerization, and distributed systems. The project evolves from a simple Docker CLI into a minimal orchestration platform.
 
@@ -8,7 +8,7 @@ It is designed as a learning-focused project in systems programming, containeriz
 
 ## Overview
 
-Rustainer provides a simple way to manage and orchestrate containers through a command-line interface, configuration files, and future API and dashboard components.
+Dockyard provides a simple way to manage and orchestrate containers through a command-line interface, configuration files, and future API and dashboard components.
 
 It begins by controlling Docker containers and gradually expands toward features inspired by tools such as Docker Compose and Kubernetes.
 
@@ -26,7 +26,7 @@ It begins by controlling Docker containers and gradually expands toward features
 
 ## Goals
 
-Rustainer is built to:
+Dockyard is built to:
 
 * Learn Rust in a real-world systems project
 * Understand container internals
@@ -53,15 +53,15 @@ Rustainer is built to:
 
 Requirements: Rust and Docker installed
 
-```bash id="a1b2c3"
-git clone https://github.com/your-username/rustainer.git
-cd rustainer
+```bash id="r1a2b3"
+git clone https://github.com/your-username/dockyard.git
+cd dockyard
 cargo build
 ```
 
 Run:
 
-```bash id="d4e5f6"
+```bash id="c4d5e6"
 cargo run -- ps
 ```
 
@@ -71,40 +71,40 @@ cargo run -- ps
 
 List containers:
 
-```bash id="g7h8i9"
-rustainer ps
+```bash id="u1v2w3"
+dockyard ps
 ```
 
 Start a container:
 
-```bash id="j1k2l3"
-rustainer start nginx
+```bash id="x4y5z6"
+dockyard start nginx
 ```
 
 Stop a container:
 
-```bash id="m4n5o6"
-rustainer stop nginx
+```bash id="h7i8j9"
+dockyard stop nginx
 ```
 
 View logs:
 
-```bash id="p7q8r9"
-rustainer logs nginx
+```bash id="k1l2m3"
+dockyard logs nginx
 ```
 
 Deploy from configuration (future feature):
 
-```bash id="s1t2u3"
-rustainer apply stack.yml
+```bash id="n4o5p6"
+dockyard apply stack.yml
 ```
 
 ---
 
 ## Project Structure
 
-```text id="v4w5x6"
-rustainer/
+```text id="q7r8s9"
+dockyard/
 ├── cli/
 ├── core/
 ├── daemon/
@@ -163,7 +163,7 @@ rustainer/
 
 ## Vision
 
-Rustainer is not intended to replace Docker or Kubernetes. Its purpose is to provide a minimal and educational implementation of container orchestration concepts.
+Dockyard is not intended to replace Docker or Kubernetes. Its purpose is to provide a minimal and educational implementation of container orchestration concepts.
 
 The goal is to help developers understand how these systems work internally by building a simplified version from scratch.
 
